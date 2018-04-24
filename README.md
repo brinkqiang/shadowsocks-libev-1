@@ -31,6 +31,12 @@ To get the latest source code, you should also update the submodules as followin
 git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
 cd shadowsocks-libev-v3.1.3
 git submodule update --init --recursive
+yum install libtool
+automake --add-missing
+autoreconf
+sh configure
+make
+make install
 ```
 
 ### Build and install with recent libsodium
