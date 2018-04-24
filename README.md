@@ -28,7 +28,7 @@ refer to the [Wiki page](https://github.com/shadowsocks/shadowsocks/wiki/Feature
 To get the latest source code, you should also update the submodules as following:
 
 ```bash
-git clone https://github.com/shadowsocks/shadowsocks-libev.git
+git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
 cd shadowsocks-libev
 git submodule update --init --recursive
 ```
