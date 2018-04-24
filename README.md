@@ -29,7 +29,7 @@ To get the latest source code, you should also update the submodules as followin
 
 ```bash
 git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
-cd shadowsocks-libev
+cd shadowsocks-libev-v3.1.3
 git submodule update --init --recursive
 ```
 
