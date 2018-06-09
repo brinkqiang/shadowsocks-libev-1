@@ -34,7 +34,7 @@ git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
 cd shadowsocks-libev-v3.1.3
 git submodule update --init --recursive
 
-autoreconf --install --force
+sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
 sh configure
 make
 make install
