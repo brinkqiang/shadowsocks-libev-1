@@ -31,7 +31,7 @@ To get the latest source code, you should also update the submodules as followin
 yum install git
 yum install gcc autoconf libtool automake make
 yum install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
-yum install bedtls mbedtls-devel libsodium libsodium-devel
+yum install mbedtls mbedtls-devel libsodium libsodium-devel
 
 git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
 cd shadowsocks-libev-v3.1.3
