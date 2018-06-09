@@ -34,13 +34,14 @@ yum -y install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
 yum -y install mbedtls mbedtls-devel libsodium libsodium-devel
 
 git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
-cd shadowsocks-libev-v3.1.3
+pushd shadowsocks-libev-v3.1.3
 git submodule update --init --recursive
 
 sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
 sh configure
 make
 make install
+popd
 ```
 
 ### Build and install with recent libsodium
