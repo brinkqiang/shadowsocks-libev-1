@@ -11,7 +11,7 @@ created by [@clowwindy](https://github.com/clowwindy), and maintained by
 
 Current version: 3.1.3 | [Changelog](debian/changelog)
 
-Travis CI: [![Travis CI](https://travis-ci.org/shadowsocks/shadowsocks-libev.svg?branch=master)](https://travis-ci.org/shadowsocks/shadowsocks-libev)
+Travis CI: [![Travis CI](https://travis-ci.org/brinkqiang/shadowsocks-libev-v3.1.3.svg?branch=master)](https://travis-ci.org/brinkqiang/shadowsocks-libev-v3.1.3)
 
 ## Features
 
@@ -28,19 +28,20 @@ refer to the [Wiki page](https://github.com/shadowsocks/shadowsocks/wiki/Feature
 To get the latest source code, you should also update the submodules as following:
 
 ```bash
-yum install git
-yum install gcc autoconf libtool automake make
-yum install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
-yum install bedtls mbedtls-devel libsodium libsodium-devel
+yum -y install git
+yum -y install gcc autoconf libtool automake make
+yum -y install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
+yum -y install mbedtls mbedtls-devel libsodium libsodium-devel
 
 git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
-cd shadowsocks-libev-v3.1.3
+pushd shadowsocks-libev-v3.1.3
 git submodule update --init --recursive
 
 sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
 sh configure
 make
 make install
+popd
 ```
 
 ### Build and install with recent libsodium
