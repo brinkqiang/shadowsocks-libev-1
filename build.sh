@@ -1,6 +1,9 @@
 #!/bin/sh
 
-yum install git gettext gcc autoconf libtool automake make asciidoc xmlto c-ares-devel libev-devel mbedtls mbedtls-devel libsodium libsodium-devel pcre-devel
+yum install git
+yum install gcc autoconf libtool automake make
+yum install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
+yum install bedtls mbedtls-devel libsodium libsodium-devel
 
 sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
 
