@@ -11,7 +11,7 @@ created by [@clowwindy](https://github.com/clowwindy), and maintained by
 
 Current version: 3.1.3 | [Changelog](debian/changelog)
 
-Travis CI: [![Travis CI](https://travis-ci.org/brinkqiang/shadowsocks-libev-v3.1.3.svg?branch=master)](https://travis-ci.org/brinkqiang/shadowsocks-libev-v3.1.3)
+Travis CI: [![Travis CI](https://travis-ci.org/brinkqiang/ssr.svg?branch=master)](https://travis-ci.org/brinkqiang/ssr)
 
 ## Features
 
@@ -33,8 +33,8 @@ yum -y install gcc autoconf libtool automake make
 yum -y install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
 yum -y install mbedtls mbedtls-devel libsodium libsodium-devel
 
-git clone https://github.com/brinkqiang/shadowsocks-libev-v3.1.3.git
-pushd shadowsocks-libev-v3.1.3
+git clone https://github.com/brinkqiang/ssr.git
+pushd ssr
 git submodule update --init --recursive
 
 sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
