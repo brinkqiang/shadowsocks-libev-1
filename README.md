@@ -29,7 +29,7 @@ To get the latest source code, you should also update the submodules as followin
 
 ```bash
 yum -y install git
-yum -y install gcc autoconf libtool automake make
+yum -y install gcc gcc-c++ autoconf libtool automake make
 yum -y install gettext asciidoc xmlto c-ares-devel libev-devel pcre-devel
 yum -y install mbedtls mbedtls-devel libsodium libsodium-devel
 
