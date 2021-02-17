@@ -1,0 +1,7 @@
+ports:
+- port: 52020
+  onOpen: open-preview
+
+tasks:
+- init: bash build.sh
+
